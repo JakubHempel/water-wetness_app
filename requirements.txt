@@ -1,6 +1,6 @@
 ee
-geemap
+geemap>=0.28.2
 pandas
 streamlit==1.44.1
 folium
-earthengine-api
+earthengine-api>=0.1.358
