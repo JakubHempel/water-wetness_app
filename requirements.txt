@@ -1,6 +1,6 @@
 ee
-geemap==0.35.1
-pandas==2.0.1
+geemap
+pandas
 streamlit==1.44.1
-folium==0.19.4
+folium
 earthengine-api==0.1.385
