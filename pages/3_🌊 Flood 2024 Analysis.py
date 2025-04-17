@@ -164,12 +164,8 @@ with tab3:
         "AWEI": {
             "name": "💦 AWEI – Automated Water Extraction Index",
             "description": "Detects open water surfaces using green and SWIR bands. Resistant to noise in urban areas.",
-            "formula": r'''
-                        \begin{aligned}
-                        AWEI &= 4(Green - SWIR1) \\
-                        &\quad - (0.25 \times NIR + 2.75 \times SWIR2)
-                        \end{aligned}
-                        ''',
+            "formula": r'''AWEI = 4 \cdot ({Green}-{SWIR1})- \\
+            (0.25 \cdot {NIR}+2.75 \cdot {SWIR2})''',
             "ref": """"""
         },
         "CGI": {
