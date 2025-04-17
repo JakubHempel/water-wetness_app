@@ -1,4 +1,4 @@
-ee==1.4.5
+ee
 geemap==0.35.1
 pandas==2.0.1
 streamlit==1.44.1
