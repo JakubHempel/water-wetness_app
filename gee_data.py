@@ -2,12 +2,6 @@ import ee
 import streamlit as st
 import geemap.foliumap as geemap
 
-@st.cache_data
-def ee_authenticate(token_name="EARTHENGINE_TOKEN"):
-    geemap.ee_initialize(token_name=token_name)
-
-ee_authenticate(token_name="EARTHENGINE_TOKEN")
-
 # Area of interest
 aoi = ee.FeatureCollection("projects/jakub-hempel/assets/powiaty")
 aoi_flood = ee.FeatureCollection("projects/jakub-hempel/assets/aoi_flood_v2")
