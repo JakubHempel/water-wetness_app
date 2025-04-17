@@ -3,4 +3,4 @@ geemap
 pandas
 streamlit==1.44.1
 folium
-earthengine-api==0.1.385
+earthengine-api
