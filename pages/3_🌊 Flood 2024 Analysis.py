@@ -196,7 +196,7 @@ with tab3:
         }
     }
 
-    col1, col2 = st.columns([1, 2])
+    col1, col2, col3 = st.columns([1.1, 0.05, 1.85])
 
     with col1:
         st.markdown("")
@@ -208,7 +208,7 @@ with tab3:
         st.divider()
         st.markdown(indices[selected_index]["ref"], unsafe_allow_html=True)
 
-    with col2:
+    with col3:
         with st.spinner("Wait for the map ..."):
             # --- Map Setup ---
             Map = geemap.Map(layer_ctrl=True, center=[50.46, 17.19], zoom=12, control_scale=True, basemap="Esri.WorldGrayCanvas")
@@ -247,9 +247,11 @@ with tab3:
             )
 
             #Map.add_colorbar(vis_params_indices[selected_index], label=selected_index)
-            Map.add_colormap(width=3, height=0.15, vmin=-1, vmax=1, palette=vis_params_indices[selected_index]['palette'],
+            Map.add_colormap(width=3, height=0.15, vmin=vis_params_indices[selected_index]['min'],
+                             vmax=vis_params_indices[selected_index]['max'],
+                             palette=vis_params_indices[selected_index]['palette'],
                              label=selected_index, label_size=8, bg_color='white',
-                             orientation='horizontal', position=(52, 4))
+                             orientation='horizontal', position=(48, 4))
             # Display map
             Map.to_streamlit(height=750)
 
