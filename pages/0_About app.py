@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.set_page_config(layout="wide", page_title="📃 Home | HydroPix 💧🛰️")
+st.set_page_config(layout="wide", page_title="About app | HydroPix 💧🛰️")
 
 st.markdown("## 🌐 About HydroPix")
 
