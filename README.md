@@ -65,8 +65,7 @@ You can explore the Wetland Monitoring Application in two ways:
 
 - Click the link below to access the fully operational web app (no installation required):
 
-  ➡️ [**Launch Application**]()  
-  *(Link will be updated once deployed.)*
+  ➡️ [**Launch Application**](https://hydro-pix.streamlit.app/)  
 
 ---
 
