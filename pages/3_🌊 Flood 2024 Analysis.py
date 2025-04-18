@@ -214,7 +214,7 @@ with tab3:
     with col3:
         with st.spinner("Wait for the map ..."):
             # --- Map Setup ---
-            Map = geemap.Map(layer_ctrl=True, center=[50.46, 17.19], zoom=12, control_scale=True, basemap="Esri.WorldGrayCanvas")
+            Map = geemap.Map(layer_ctrl=True, center=[50.46, 17.19], zoom=12, control_scale=True)
             minimap = plugins.MiniMap()
             Map.add_child(minimap)
 
