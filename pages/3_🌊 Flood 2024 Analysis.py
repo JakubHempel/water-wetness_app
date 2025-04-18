@@ -163,10 +163,13 @@ with tab3:
     indices = {
         "AWEI": {
             "name": "💦 AWEI – Automated Water Extraction Index",
-            "description": "Detects open water surfaces using green and SWIR bands. Resistant to noise in urban areas.",
+            "description": "Is designed to improve the detection of open surface water in satellite imagery. "
+                           "It uses a specific combination of visible and infrared bands to effectively differentiate water bodies from shadows, dark soils, and built-up surfaces. "
+                           "AWEI is especially useful in flood mapping and wetland monitoring, where traditional indices often confuse water with dark non-water features. "
+                           "Its sensitivity to the spectral characteristics of water enables more accurate and automated water classification, even under challenging observation conditions (Feyisa et al. 2014).",
             "formula": r'''AWEI = 4 \cdot ({Green}-{SWIR1})- \\
             (0.25 \cdot {NIR}+2.75 \cdot {SWIR2})''',
-            "ref": """"""
+            "ref": """<ul><li>Feyisa G.L., Meilby H., Fensholt R., Proud S.R. 2014 <i>"Automated Water Extraction Index: A new technique for surface water mapping using Landsat imagery"</i>, Remote Sensing of Environment, 140, 23-35. doi:10.1016/j.rse.2013.08.029.</li></ul>"""
         },
         "CGI": {
             "name": "🦠 CGI – Chlorophyll Green Index",
@@ -183,7 +186,7 @@ with tab3:
                            "The second source is organic matter that enters the water from external sources, like coal that may leach from the surrounding soil. "
                            "It has also been demonstrated that there is a correlation between content of methylmercury and CDOM in rivers (Fichot et al. 2016).",
             "formula": r'''CDOM = 537 \cdot \exp\left(-2.93 \cdot \frac{Green}{Red}\right)''',
-            "ref": """<ul><li>Fichot C.G., Downing B.D., Bergamaschi B.A., Windham-Myers L., Marvin-DiPasquale M., Thompson D.R., Gierach M.M. 2016. <i>"High-Resolution Remote Sensing of Water Quality in the SanFrancisco Bay−Delta Estuary."</i>, Environmental Science and Technology. 50. doi:10.1021/acs.est.5b03518.</li></ul>"""
+            "ref": """<ul><li>Fichot C.G., Downing B.D., Bergamaschi B.A., Windham-Myers L., Marvin-DiPasquale M., Thompson D.R., Gierach M.M. 2016. <i>"High-Resolution Remote Sensing of Water Quality in the SanFrancisco Bay−Delta Estuary."</i>, Environmental Science and Technology, 50. doi:10.1021/acs.est.5b03518.</li></ul>"""
         },
         "DOC": {
             "name": "🦠 DOC – Dissolved Organic Carbon",
@@ -196,7 +199,7 @@ with tab3:
         }
     }
 
-    col1, col2, col3 = st.columns([1.1, 0.05, 1.85])
+    col1, col2, col3 = st.columns([1, 0.05, 1.95])
 
     with col1:
         st.markdown("")
