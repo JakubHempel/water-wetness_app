@@ -47,7 +47,7 @@ with col1:
     - **Cyan and Aqua** areas indicate **wetland regions** with frequent wetness but without permanent standing water.
 
     ---
-    ### 💡 What You See on the Map:
+    #### 💡 What You See on the Map:
 
     - :gray-background[**Permanent Water**]: Areas with consistent water presence year-round (rivers, lakes, reservoirs).
     - :gray-background[**Temporary Water**]: Areas that flood or retain water seasonally during high rainfall.
