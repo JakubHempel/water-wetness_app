@@ -17,7 +17,7 @@ st.markdown("""
 - **Satellite Data**: Sentinel-1 radar imagery (2018–2025); Sentinel-1, Sentinel-2 (flood event)
 - **Processing Platform**: [Google Earth Engine](https://earthengine.google.com)  
 - **Python Tooling**: [geemap](https://geemap.org)  
-- **Study Area**: *Kraków*, *Krakowski*, *Wielicki* counties and *Kłodzki*, *Nyski*, *Ząbkowicki* counties (flood event)
+- **Study Area**: *Krakow*, *Krakowski*, *Wielicki* counties and *Kłodzki*, *Nyski*, *Ząbkowicki* counties (flood event)
 """)
 
 st.markdown("### 🧠 Methodology")
