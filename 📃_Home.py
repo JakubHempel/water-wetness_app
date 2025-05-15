@@ -25,8 +25,8 @@ st.markdown("""
 st.markdown("""
 #### 📃 1. Start on the *Home* Page
 - Get familiar with the **aim and scope** of the application.
-- Learn about the use of **radar satellite data (Sentinel-1)**.
-- Understand how **wetland areas are monitored** using **automated classification methods**.
+- Learn about the use of **radar (Sentinel-1)** and **optical (Sentinel-2) satellite data**.
+- Understand how **wetland areas are monitored** using **automated classification methods** (adaptive Otsu thresholding).
 
 ---
 
