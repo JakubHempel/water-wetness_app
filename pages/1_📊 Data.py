@@ -77,7 +77,7 @@ with col1:
 with col2:
     col_x, col_y = st.columns([1, 1])
 
-    Map_aoi_flood = geemap.Map(center=[50.39, 17.05], zoom=9)
+    Map_aoi_flood = geemap.Map(center=[50.39, 17.05], zoom=9, basemap='OpenStreetMap.DE')
     Map_aoi_flood.addLayer(gd.aoi_flood, {}, "AOI - Flood")
 
     Map_aoi = geemap.Map(center=[50.10, 19.95], zoom=9)
