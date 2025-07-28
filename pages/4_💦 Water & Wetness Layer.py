@@ -69,5 +69,5 @@ with col3:
             "</div>", unsafe_allow_html=True
         )
 
-        Map.add_legend(title="Water & Wetness Layer", legend_dict=legend_dict)
+        #Map.add_legend(title="Water & Wetness Layer", legend_dict=legend_dict)
         Map.to_streamlit(height=700)
